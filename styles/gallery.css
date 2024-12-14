@@ -1,2 +1,22 @@
 @import "./main.css";
 @import "./navbar.css";
+
+.content-container {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 4rem;
+}
+
+.content-container img {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: auto;
+  width: 300px;
+}
