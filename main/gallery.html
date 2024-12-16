@@ -7,9 +7,14 @@
     <title>Portfolio | Godwin</title>
   </head>
   <body>
+    <script src="../scripts/app.js"></script>
+
     <nav class="nav-container">
       <div class="burger-container">
-        <i class="fa-solid fa-bars"></i>
+        <i
+          class="fa-solid fa-bars"
+          onclick="toggleSidebar('sidenav-content')"
+        ></i>
       </div>
       <ul>
         <li><a href="./index.html">Home</a></li>
@@ -50,6 +55,16 @@
     </section>
 
     <footer>&copy Godwin Galvez 2024</footer>
-    <script src="../scripts/app.js"></script>
+
+    <div class="sidenav-content">
+      <div class="exit-content">
+        <i class="fa-solid fa-x" onclick="toggleSidebar('sidenav-content')"></i>
+      </div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About me</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
+    </div>
   </body>
 </html>
