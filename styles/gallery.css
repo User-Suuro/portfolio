@@ -12,6 +12,7 @@
 }
 
 .content-container img {
+  margin: auto;
   color: #fff;
   display: flex;
   justify-content: center;

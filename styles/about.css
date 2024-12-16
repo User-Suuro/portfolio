@@ -8,6 +8,7 @@ body {
 .content-container {
   display: flex;
   justify-content: space-between;
+  min-height: 100%;
   padding: 1rem 0;
 }
 
@@ -27,6 +28,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
   width: 75%;
 }
 
@@ -64,11 +66,13 @@ body {
   align-items: center;
   border-radius: 4px;
   height: auto;
+
   width: 100px;
 }
 
 .tech-container img {
   margin: 1rem;
+  margin: auto;
 }
 
 .proj-container img {
@@ -88,11 +92,23 @@ body {
 .col-2 img {
   width: 75%;
   min-width: 50%;
-  max-width: 75%;
+  max-width: 200px;
   border-radius: 100%;
 }
 
 .col-2 .name {
   font-size: 1.2rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 1080px) {
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .content-container {
+    flex-direction: column-reverse;
+  }
 }
